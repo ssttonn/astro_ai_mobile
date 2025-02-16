@@ -17,3 +17,29 @@
     --backgroundLight: #171717;
   }
 }
+
+@layer components {
+  .size-screen {
+    @apply w-screen h-screen;
+  }
+
+  .size-full {
+    @apply w-full h-full;
+  }
+
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+
+  .input-container {
+    @apply bg-backgroundLight rounded-common lg:p-4 p-3 text-foreground font-KelsonRegular lg:text-xl text-sm flex flex-row gap-3 items-center;
+  }
+
+  .input {
+    @apply w-full bg-transparent border-none focus:outline-none flex-1;
+  }
+
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+}

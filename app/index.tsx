@@ -1,12 +1,10 @@
-import { StyleSheet, Text, View } from "react-native";
+import ScreenRoutes from "@/constants/screenRoutes";
+import { Redirect } from "expo-router";
 import React from "react";
-import { Redirect, Href } from "expo-router";
 import "../global.css";
 
 const Home = () => {
-  return <Redirect href={"/(auth)/onboarding" as Href} />;
+  return <Redirect href={ScreenRoutes.Onboarding} />;
 };
 
 export default Home;
-
-const styles = StyleSheet.create({});
